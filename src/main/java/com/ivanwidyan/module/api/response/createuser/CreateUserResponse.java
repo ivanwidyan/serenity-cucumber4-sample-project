@@ -1,9 +1,9 @@
-package com.ivanwidyan.module.api.response.adduser;
+package com.ivanwidyan.module.api.response.createuser;
 
 import lombok.Data;
 
 @Data
-public class AddSingleUserResponse {
+public class CreateUserResponse {
     private String name;
     private String job;
     private int id;

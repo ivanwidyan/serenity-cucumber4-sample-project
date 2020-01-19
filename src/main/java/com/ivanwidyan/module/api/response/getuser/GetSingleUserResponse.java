@@ -5,5 +5,5 @@ import lombok.Data;
 
 @Data
 public class GetSingleUserResponse {
-    public UserData data;
+    private UserData data;
 }
