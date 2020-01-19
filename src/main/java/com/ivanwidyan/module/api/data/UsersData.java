@@ -1,4 +1,4 @@
-package com.ivanwidyan.module.data;
+package com.ivanwidyan.module.api.data;
 
 import io.restassured.response.Response;
 

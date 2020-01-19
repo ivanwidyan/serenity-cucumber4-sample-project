@@ -1,4 +1,4 @@
-@DeleteUserFeature @Users @Api @Regression
+@DeleteUserFeature @Users @API @Regression
 Feature: Delete User
 
   @Positive

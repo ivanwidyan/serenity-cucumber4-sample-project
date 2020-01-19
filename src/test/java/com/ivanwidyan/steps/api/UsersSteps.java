@@ -1,10 +1,10 @@
 package com.ivanwidyan.steps.api;
 
 import com.ivanwidyan.module.api.UsersController;
+import com.ivanwidyan.module.api.data.UsersData;
 import com.ivanwidyan.module.api.response.createuser.CreateUserResponse;
 import com.ivanwidyan.module.api.response.getuser.GetSingleUserResponse;
 import com.ivanwidyan.module.api.response.updateuser.UpdateUserResponse;
-import com.ivanwidyan.module.data.UsersData;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class UsersSteps extends ScenarioSteps {
 
-    //---------------------------- Given Steps
+    //---------------------------- Set Parameters
     @Given("^\\[api] set id to '(.*)'$")
     public void api_set_id_to (Integer value) {
         UsersData.setId(value);
@@ -91,6 +91,7 @@ public class UsersSteps extends ScenarioSteps {
                     statusCode(code);
     }
 
+    //---------------------------- Assert Response
     @Then("^\\[api] get single user response equals with request$")
     public void api_get_single_user_response_equals_with_request () {
         // Assert by casting the Response to Java Object

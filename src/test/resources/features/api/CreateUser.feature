@@ -1,4 +1,4 @@
-@CreateUserFeature @Users @Api @Regression
+@CreateUserFeature @Users @API @Regression
 Feature: Create User
 
   @Positive

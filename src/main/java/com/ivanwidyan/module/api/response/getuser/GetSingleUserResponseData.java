@@ -3,7 +3,7 @@ package com.ivanwidyan.module.api.response.getuser;
 import lombok.Data;
 
 @Data
-public class UserData {
+public class GetSingleUserResponseData {
     private int id;
     private String email;
     private String first_name;

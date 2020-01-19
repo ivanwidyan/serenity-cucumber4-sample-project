@@ -1,5 +1,5 @@
-@GetSingleUserFeature @Users @Api @Regression
-Feature: Get User
+@GetSingleUserFeature @Users @API @Regression
+Feature: Get Single User
 
   @Positive
   Scenario: Get single user success

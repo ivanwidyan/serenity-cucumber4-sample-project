@@ -1,4 +1,4 @@
-@UpdateUserFeature @Api @Users @Regression
+@UpdateUserFeature @Users @API @Regression
 Feature: Update User
 
   @Positive

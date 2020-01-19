@@ -1,5 +1,6 @@
 package com.ivanwidyan.module.ui;
 
+import com.ivanwidyan.module.ui.data.GooglePageData;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -15,16 +16,16 @@ public class GooglePage extends PageObject {
   @FindBy(xpath = "//input[@value='Google Search']")
   WebElementFacade searchButton;
 
-  @FindBy(xpath = "//div[@class='rc']//h3")
+  @FindBy(xpath = "//div[@class='srg']//h3")
   List<WebElementFacade> searchData;
 
   public void openHomePage() {
     openUrl("https://www.google.com/");
   }
 
-  public void doSearch(String value){
+  public void doSearch(){
     searchBox.click();
-    searchBox.typeAndEnter(value);
+    searchBox.typeAndEnter(GooglePageData.getKeyword());
   }
 
   public List<String> getSearchData() {

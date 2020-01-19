@@ -2,7 +2,7 @@ package com.ivanwidyan.module.api;
 
 import com.ivanwidyan.module.api.request.createuser.CreateUserRequest;
 import com.ivanwidyan.module.api.request.updateuser.UpdateUserRequest;
-import com.ivanwidyan.module.data.UsersData;
+import com.ivanwidyan.module.api.data.UsersData;
 import io.restassured.response.Response;
 
 import static net.serenitybdd.rest.SerenityRest.given;
