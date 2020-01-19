@@ -1,4 +1,7 @@
 # Serenity Cucumber 4 Sample Project
+
+[![CircleCI](https://circleci.com/gh/ivanwidyan/serenity-cucumber4-sample-project.svg?style=svg)](https://circleci.com/gh/ivanwidyan/serenity-cucumber4-sample-project)
+
 This is a Serenity BDD sample project which gives examples on how to run
 API automation test using RestAssured and for web automation it uses Selenium for it's core.
 The automation test is run on Cucumber 4.
