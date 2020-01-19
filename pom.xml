@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ivanwidyan</groupId>
-    <artifactId>serenity-cucumber-sample-project</artifactId>
+    <artifactId>serenity-cucumber4-sample-project</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Serenity Cucumber Sample Project</name>
+    <name>Serenity Cucumber 4 Sample Project</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
