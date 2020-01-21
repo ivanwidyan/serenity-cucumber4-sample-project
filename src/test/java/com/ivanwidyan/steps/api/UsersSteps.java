@@ -66,11 +66,21 @@ public class UsersSteps extends ScenarioSteps {
 
     @Then("^\\[api] create user status code must be '(\\d+)'$")
     public void api_create_user_status_code_must_be (int code) {
-        assertThat(UsersData.getCreateUserResponse().statusCode(), equalTo(code));
+        assert_with_hamcrest_that_create_user_status_code_must_be(code);
 
+        assert_with_rest_assured_that_create_user_status_code_must_be(code);
+    }
+
+    @Then("^\\[api] assert with hamcrest that create user status code must be '(\\d+)'$")
+    public void assert_with_hamcrest_that_create_user_status_code_must_be (int code) {
+        assertThat(UsersData.getCreateUserResponse().statusCode(), equalTo(code));
+    }
+
+    @Then("^\\[api] assert with rest assured that create user status code must be '(\\d+)'$")
+    public void assert_with_rest_assured_that_create_user_status_code_must_be (int code) {
         UsersData.getCreateUserResponse().
                 then().
-                    statusCode(code);
+                statusCode(code);
     }
 
     @Then("^\\[api] update user status code must be '(\\d+)'$")
