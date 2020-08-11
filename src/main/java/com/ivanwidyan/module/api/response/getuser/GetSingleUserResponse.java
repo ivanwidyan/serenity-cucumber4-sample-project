@@ -6,4 +6,5 @@ import lombok.Data;
 @Data
 public class GetSingleUserResponse {
     private GetSingleUserResponseData data;
+    private GetSingleUserResponseAd ad;
 }
